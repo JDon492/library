@@ -129,6 +129,7 @@ const createBookTile = (book) => {
     readStatus.classList.add("read-status")
     readBtn.classList.add("read-button")
     readBtn.onclick = toggleRead
+    removeButton.onclick = removeBook
 
     removeButton.textContent = "✖"
     title.textContent = `${book.title}`
@@ -162,5 +163,14 @@ const toggleRead = (e) => {
     const book = library.findBook(title)
 
     book.readStatus = !book.readStatus
+    updateGrid()
+}
+
+// Removing Book
+
+const removeBook = (e) => {
+    const title = e.target.parentElement.children[1].textContent
+
+    library.removeBook(title)
     updateGrid()
 }
