@@ -9,6 +9,39 @@
     <script src="./app.js" defer></script>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>Library</h1>
+        <button class ="add-new-book" type="button"></button>
+    </div>
+    <main class="main-container">
+        <div class="book-tile">
+            <button class ="remove-button" type="button"></button>
+            <h3 class="book-title"></h3>
+            <p class="book-author"></p>
+            <p class="book-pages"></p>
+            <div class="read-status">
+                <p class="read-text"></p>
+                <button class="read-button" type="button"></button>
+            </div>
+        </div>
+    </main>
+    <div class="new-book-popup">
+        <form>
+            <label for="get-title">Enter title</label>
+            <input type="text" name="title" id="get-title">
+
+            <label for="get-author">Enter Author</label>
+            <input type="text" name="author" id="get-author">
+
+            <label for="get-pages">Enter Pages</label>
+            <input type="number" name ="pages" id="get-pages">
+
+            <label for="get-read-status">Have you read this book?</label>
+            <input type="checkbox" name="read-status" id="get-read-status">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
 </body>
 </html>
