@@ -5,6 +5,7 @@
     --main-background-color: #A38D7F;
     --tile-background-color: #54423F;
     --tile-text-color: #fcedd8;
+    --tile-dark-brown: #302523
 }
 
 * {
@@ -68,11 +69,11 @@ body {
     width: 240px;
     height: 280px;
     border-radius: 8px;
-    border-left: 2px solid #302523;
+    border-left: 2px solid var(--tile-dark-brown);
     border-bottom: 2px solid whitesmoke;
     border-right: 2px solid whitesmoke;
     font-weight: bold;
-    text-shadow: 0px 0px 5px #302523;
+    text-shadow: 0px 0px 5px var(--tile-dark-brown);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,7 +124,7 @@ body {
 }
 
 .red-status {
-    background: crimson;
+    background-color: crimson;
 }
 
 /* Book Pop-up */
