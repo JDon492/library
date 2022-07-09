@@ -91,7 +91,9 @@ const addBook = (e) => {
 
 const titleInput = document.getElementById("get-title")
 
-titleInput.onkeyup = errorMsg.textContent = ""
+titleInput.onkeyup = () => {
+    errorMsg.textContent = ""
+}
 
 form.onsubmit = addBook
 

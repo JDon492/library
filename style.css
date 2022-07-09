@@ -101,7 +101,9 @@ body {
 
 .book-tile > .read-status {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 1px;
+    width: 100px;
 }
 
 .book-tile > .read-status > .read-button {
@@ -192,4 +194,24 @@ body {
 .active {
     visibility: visible;
     opacity: 1;
+}
+
+/* Footer */
+
+.footer { 
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+a img {
+    height: 20px;
+    margin-left: 5px;
+    filter: invert(100%);
 }
