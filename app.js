@@ -89,6 +89,10 @@ const addBook = (e) => {
     closeForm()
 }
 
+const titleInput = document.getElementById("get-title")
+
+titleInput.onkeyup = errorMsg.textContent = ""
+
 form.onsubmit = addBook
 
 // Container Updates

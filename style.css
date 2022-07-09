@@ -55,7 +55,7 @@ body {
 
 .main-container {
     display: grid;
-    grid-template-columns: repeat(autofit, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-auto-rows: 280px;
     gap: 2rem 1rem;
     margin: 3rem;
@@ -140,6 +140,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
 }
 
 .new-book-popup > form {
@@ -167,6 +168,17 @@ body {
     transform: scale(0.95);
 }
 
+.error-msg {
+    color: crimson;
+    text-shadow: 0 0 2px black;
+    font-weight: bolder;
+}
+
+.new-book-popup,
+.overlay {
+    transition: all .2s ease-in-out;
+}
+
 .overlay {
     visibility: hidden;
     position: fixed;
@@ -174,8 +186,10 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.6);
+    opacity: 0;
 }
 
 .active {
     visibility: visible;
+    opacity: 1;
 }
