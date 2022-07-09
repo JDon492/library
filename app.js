@@ -1,3 +1,16 @@
+// Query Selectors
+
+const newBookBtn = document.querySelector(".add-new-book")
+const removeBtn = document.querySelector(".remove-button")
+const mainCont = document.querySelector(".main-container")
+const readBtn = document.querySelector(".read-button")
+const newBookPopup = document.querySelector(".new-book-popup")
+const errorMsg = document.querySelector(".error-msg")
+const docOverlay = document.querySelector(".overlay")
+const form = document.querySelector("form")
+
+// Constructors
+
 class Book {
     constructor(title,author,pages,readStatus) {
     this.title = title
@@ -31,3 +44,22 @@ class Library {
   }
 
   const library = new Library()
+
+// UI
+
+// New Book Button & Form
+
+const newBookForm = () => {
+    form.reset()
+    newBookPopup.classList.add("active")
+    docOverlay.classList.add("active")
+}
+
+newBookBtn.onclick = newBookForm
+
+const closeForm = () => {
+    newBookPopup.classList.remove("active")
+    docOverlay.classList.remove("active")
+}
+
+docOverlay.onclick = closeForm

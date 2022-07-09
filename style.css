@@ -147,6 +147,24 @@ body {
     gap: 0.5rem;
 }
 
+.new-book-popup > form > .submit-btn {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.new-book-popup > form > .submit-btn:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.new-book-popup > form > .submit-btn:active {
+    transform: scale(0.95);
+}
+
 .overlay {
     visibility: hidden;
     position: fixed;
