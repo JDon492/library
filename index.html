@@ -11,16 +11,16 @@
 <body>
     <div class="header">
         <h1>Library</h1>
-        <button class ="add-new-book" type="button"></button>
+        <button class ="add-new-book" type="button">+</button>
     </div>
     <main class="main-container">
         <div class="book-tile">
-            <button class ="remove-button" type="button"></button>
-            <h3 class="book-title"></h3>
-            <p class="book-author"></p>
-            <p class="book-pages"></p>
+            <button class ="remove-button" type="button">X</button>
+            <h3 class="book-title">Title</h3>
+            <p class="book-author">Author</p>
+            <p class="book-pages">Pages</p>
             <div class="read-status">
-                <p class="read-text"></p>
+                <p class="read-text">Read</p>
                 <button class="read-button" type="button"></button>
             </div>
         </div>
@@ -28,13 +28,13 @@
     <div class="new-book-popup">
         <form>
             <label for="get-title">Enter title</label>
-            <input type="text" name="title" id="get-title">
+            <input type="text" name="title" id="get-title" placeholder="Title">
 
             <label for="get-author">Enter Author</label>
-            <input type="text" name="author" id="get-author">
+            <input type="text" name="author" id="get-author" placeholder="Author">
 
             <label for="get-pages">Enter Pages</label>
-            <input type="number" name ="pages" id="get-pages">
+            <input type="number" name ="pages" id="get-pages" placeholder="Pages" min="1">
 
             <label for="get-read-status">Have you read this book?</label>
             <input type="checkbox" name="read-status" id="get-read-status">
